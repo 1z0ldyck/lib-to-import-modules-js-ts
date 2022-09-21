@@ -9,7 +9,7 @@ const app = express();
 
 declare module 'express-serve-static-core' {
   export interface Express {
-    print: any
+    print: (msg: string) => void;
   }
 }
 
